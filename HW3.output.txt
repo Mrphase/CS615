@@ -1,0 +1,453 @@
+zehui@lambda-gpu-server:~/615$ openssl s_client -CAfile cacert.pem -connect www.baidu.com:443 -msg
+CONNECTED(00000003)
+>>> ??? [length 0005]
+    16 03 01 01 36
+>>> TLS 1.3, Handshake [length 0136], ClientHello
+    01 00 01 32 03 03 09 75 43 e2 f1 2f 00 4d 5e f9
+    82 cd e5 7c 68 d8 c2 c3 0e b7 63 c0 c1 9a 5a f4
+    73 6a 42 a8 55 1f 20 0f 4a fd 81 b4 20 d6 7f 03
+    88 ca 17 e2 fc d7 68 50 d3 0d 82 4d a3 0d f6 54
+    c2 0a 30 b7 f1 b8 ac 00 3e 13 02 13 03 13 01 c0
+    2c c0 30 00 9f cc a9 cc a8 cc aa c0 2b c0 2f 00
+    9e c0 24 c0 28 00 6b c0 23 c0 27 00 67 c0 0a c0
+    14 00 39 c0 09 c0 13 00 33 00 9d 00 9c 00 3d 00
+    3c 00 35 00 2f 00 ff 01 00 00 ab 00 00 00 12 00
+    10 00 00 0d 77 77 77 2e 62 61 69 64 75 2e 63 6f
+    6d 00 0b 00 04 03 00 01 02 00 0a 00 0c 00 0a 00
+    1d 00 17 00 1e 00 19 00 18 00 23 00 00 00 16 00
+    00 00 17 00 00 00 0d 00 30 00 2e 04 03 05 03 06
+    03 08 07 08 08 08 09 08 0a 08 0b 08 04 08 05 08
+    06 04 01 05 01 06 01 03 03 02 03 03 01 02 01 03
+    02 02 02 04 02 05 02 06 02 00 2b 00 09 08 03 04
+    03 03 03 02 03 01 00 2d 00 02 01 01 00 33 00 26
+    00 24 00 1d 00 20 16 02 e5 02 70 f9 27 b1 c2 21
+    34 c1 2b b0 33 24 0c 8c 7a 9a b5 96 49 f3 25 04
+    99 1d 48 c4 3e 28
+<<< ??? [length 0005]
+    16 03 03 00 35
+<<< TLS 1.3, Handshake [length 0035], ServerHello
+    02 00 00 31 03 03 60 6a a9 b2 cf c4 c3 77 11 a5
+    b6 84 7e fb dd b4 fc 14 cd 56 f0 d2 7e f3 23 8c
+    cd 92 dc fe 79 2f 00 c0 2f 00 00 09 00 23 00 00
+    ff 01 00 01 00
+<<< ??? [length 0005]
+    16 03 03 0e ac
+<<< TLS 1.2, Handshake [length 0eac], Certificate
+    0b 00 0e a8 00 0e a5 00 0a 32 30 82 0a 2e 30 82
+    09 16 a0 03 02 01 02 02 0c 72 58 78 36 6e 9f 56
+    e8 1d 41 88 48 30 0d 06 09 2a 86 48 86 f7 0d 01
+    01 0b 05 00 30 66 31 0b 30 09 06 03 55 04 06 13
+    02 42 45 31 19 30 17 06 03 55 04 0a 13 10 47 6c
+    6f 62 61 6c 53 69 67 6e 20 6e 76 2d 73 61 31 3c
+    30 3a 06 03 55 04 03 13 33 47 6c 6f 62 61 6c 53
+    69 67 6e 20 4f 72 67 61 6e 69 7a 61 74 69 6f 6e
+    20 56 61 6c 69 64 61 74 69 6f 6e 20 43 41 20 2d
+    20 53 48 41 32 35 36 20 2d 20 47 32 30 1e 17 0d
+    32 30 30 34 30 32 30 37 30 34 35 38 5a 17 0d 32
+    31 30 37 32 36 30 35 33 31 30 32 5a 30 81 a7 31
+    0b 30 09 06 03 55 04 06 13 02 43 4e 31 10 30 0e
+    06 03 55 04 08 13 07 62 65 69 6a 69 6e 67 31 10
+    30 0e 06 03 55 04 07 13 07 62 65 69 6a 69 6e 67
+    31 25 30 23 06 03 55 04 0b 13 1c 73 65 72 76 69
+    63 65 20 6f 70 65 72 61 74 69 6f 6e 20 64 65 70
+    61 72 74 6d 65 6e 74 31 39 30 37 06 03 55 04 0a
+    13 30 42 65 69 6a 69 6e 67 20 42 61 69 64 75 20
+    4e 65 74 63 6f 6d 20 53 63 69 65 6e 63 65 20 54
+    65 63 68 6e 6f 6c 6f 67 79 20 43 6f 2e 2c 20 4c
+    74 64 31 12 30 10 06 03 55 04 03 13 09 62 61 69
+    64 75 2e 63 6f 6d 30 82 01 22 30 0d 06 09 2a 86
+    48 86 f7 0d 01 01 01 05 00 03 82 01 0f 00 30 82
+    01 0a 02 82 01 01 00 c1 a9 b0 ae 47 1a d2 57 eb
+    1d 15 1f 6e 5c b2 e4 f8 0b 20 db ea 00 df 29 ff
+    a4 6b 89 26 4b 9f 23 2f ec 57 b0 8a b8 46 40 2a
+    7e bc dc 5a 45 97 4f ad 41 0e bc 20 86 4b 0c 5d
+    55 21 47 e2 31 3c 57 a7 ec 99 47 eb 47 0d 72 d7
+    c8 16 54 75 ef d3 45 11 0f 4b ce 60 7a 46 5c 28
+    74 ae 8e 1b be d8 70 66 7b a8 93 49 28 d2 a3 76
+    94 55 de 7c 27 f2 0f f7 98 0c ad 86 da c6 ae fd
+    9f f0 d9 81 32 9a 97 e3 21 ee 04 92 96 e4 78 11
+    e5 c4 10 0e 10 31 7a 4a 97 a0 eb c7 9b c4 da 89
+    37 a9 c3 37 d7 56 b1 7f 52 c7 d9 26 0a d6 af 38
+    16 b1 6d fb 73 79 b1 68 79 03 90 eb 88 7b 8c 48
+    91 98 51 a5 07 94 86 a5 78 46 79 8f 58 9b e9 35
+    59 a7 f1 7b 57 31 0a 90 cf 24 ce 0d 24 e7 92 b2
+    6a e9 e6 96 37 0a b8 7c 87 2f 74 d2 5c e8 4b 0a
+    5f 66 18 a7 41 86 cf 26 a6 08 8e a5 49 17 92 53
+    b3 91 a5 cf 53 b0 31 02 03 01 00 01 a3 82 06 98
+    30 82 06 94 30 0e 06 03 55 1d 0f 01 01 ff 04 04
+    03 02 05 a0 30 81 a0 06 08 2b 06 01 05 05 07 01
+    01 04 81 93 30 81 90 30 4d 06 08 2b 06 01 05 05
+    07 30 02 86 41 68 74 74 70 3a 2f 2f 73 65 63 75
+    72 65 2e 67 6c 6f 62 61 6c 73 69 67 6e 2e 63 6f
+    6d 2f 63 61 63 65 72 74 2f 67 73 6f 72 67 61 6e
+    69 7a 61 74 69 6f 6e 76 61 6c 73 68 61 32 67 32
+    72 31 2e 63 72 74 30 3f 06 08 2b 06 01 05 05 07
+    30 01 86 33 68 74 74 70 3a 2f 2f 6f 63 73 70 32
+    2e 67 6c 6f 62 61 6c 73 69 67 6e 2e 63 6f 6d 2f
+    67 73 6f 72 67 61 6e 69 7a 61 74 69 6f 6e 76 61
+    6c 73 68 61 32 67 32 30 56 06 03 55 1d 20 04 4f
+    30 4d 30 41 06 09 2b 06 01 04 01 a0 32 01 14 30
+    34 30 32 06 08 2b 06 01 05 05 07 02 01 16 26 68
+    74 74 70 73 3a 2f 2f 77 77 77 2e 67 6c 6f 62 61
+    6c 73 69 67 6e 2e 63 6f 6d 2f 72 65 70 6f 73 69
+    74 6f 72 79 2f 30 08 06 06 67 81 0c 01 02 02 30
+    09 06 03 55 1d 13 04 02 30 00 30 49 06 03 55 1d
+    1f 04 42 30 40 30 3e a0 3c a0 3a 86 38 68 74 74
+    70 3a 2f 2f 63 72 6c 2e 67 6c 6f 62 61 6c 73 69
+    67 6e 2e 63 6f 6d 2f 67 73 2f 67 73 6f 72 67 61
+    6e 69 7a 61 74 69 6f 6e 76 61 6c 73 68 61 32 67
+    32 2e 63 72 6c 30 82 03 4e 06 03 55 1d 11 04 82
+    03 45 30 82 03 41 82 09 62 61 69 64 75 2e 63 6f
+    6d 82 0c 62 61 69 66 75 62 61 6f 2e 63 6f 6d 82
+    0c 77 77 77 2e 62 61 69 64 75 2e 63 6e 82 10 77
+    77 77 2e 62 61 69 64 75 2e 63 6f 6d 2e 63 6e 82
+    0f 6d 63 74 2e 79 2e 6e 75 6f 6d 69 2e 63 6f 6d
+    82 0b 61 70 6f 6c 6c 6f 2e 61 75 74 6f 82 06 64
+    77 7a 2e 63 6e 82 0b 2a 2e 62 61 69 64 75 2e 63
+    6f 6d 82 0e 2a 2e 62 61 69 66 75 62 61 6f 2e 63
+    6f 6d 82 11 2a 2e 62 61 69 64 75 73 74 61 74 69
+    63 2e 63 6f 6d 82 0e 2a 2e 62 64 73 74 61 74 69
+    63 2e 63 6f 6d 82 0b 2a 2e 62 64 69 6d 67 2e 63
+    6f 6d 82 0c 2a 2e 68 61 6f 31 32 33 2e 63 6f 6d
+    82 0b 2a 2e 6e 75 6f 6d 69 2e 63 6f 6d 82 0d 2a
+    2e 63 68 75 61 6e 6b 65 2e 63 6f 6d 82 0d 2a 2e
+    74 72 75 73 74 67 6f 2e 63 6f 6d 82 0f 2a 2e 62
+    63 65 2e 62 61 69 64 75 2e 63 6f 6d 82 10 2a 2e
+    65 79 75 6e 2e 62 61 69 64 75 2e 63 6f 6d 82 0f
+    2a 2e 6d 61 70 2e 62 61 69 64 75 2e 63 6f 6d 82
+    0f 2a 2e 6d 62 64 2e 62 61 69 64 75 2e 63 6f 6d
+    82 11 2a 2e 66 61 6e 79 69 2e 62 61 69 64 75 2e
+    63 6f 6d 82 0e 2a 2e 62 61 69 64 75 62 63 65 2e
+    63 6f 6d 82 0c 2a 2e 6d 69 70 63 64 6e 2e 63 6f
+    6d 82 10 2a 2e 6e 65 77 73 2e 62 61 69 64 75 2e
+    63 6f 6d 82 0e 2a 2e 62 61 69 64 75 70 63 73 2e
+    63 6f 6d 82 0c 2a 2e 61 69 70 61 67 65 2e 63 6f
+    6d 82 0b 2a 2e 61 69 70 61 67 65 2e 63 6e 82 0d
+    2a 2e 62 63 65 68 6f 73 74 2e 63 6f 6d 82 10 2a
+    2e 73 61 66 65 2e 62 61 69 64 75 2e 63 6f 6d 82
+    0e 2a 2e 69 6d 2e 62 61 69 64 75 2e 63 6f 6d 82
+    12 2a 2e 62 61 69 64 75 63 6f 6e 74 65 6e 74 2e
+    63 6f 6d 82 0b 2a 2e 64 6c 6e 65 6c 2e 63 6f 6d
+    82 0b 2a 2e 64 6c 6e 65 6c 2e 6f 72 67 82 12 2a
+    2e 64 75 65 72 6f 73 2e 62 61 69 64 75 2e 63 6f
+    6d 82 0e 2a 2e 73 75 2e 62 61 69 64 75 2e 63 6f
+    6d 82 08 2a 2e 39 31 2e 63 6f 6d 82 12 2a 2e 68
+    61 6f 31 32 33 2e 62 61 69 64 75 2e 63 6f 6d 82
+    0d 2a 2e 61 70 6f 6c 6c 6f 2e 61 75 74 6f 82 12
+    2a 2e 78 75 65 73 68 75 2e 62 61 69 64 75 2e 63
+    6f 6d 82 11 2a 2e 62 6a 2e 62 61 69 64 75 62 63
+    65 2e 63 6f 6d 82 11 2a 2e 67 7a 2e 62 61 69 64
+    75 62 63 65 2e 63 6f 6d 82 0e 2a 2e 73 6d 61 72
+    74 61 70 70 73 2e 63 6e 82 0d 2a 2e 62 64 74 6a
+    72 63 76 2e 63 6f 6d 82 0c 2a 2e 68 61 6f 32 32
+    32 2e 63 6f 6d 82 0c 2a 2e 68 61 6f 6b 61 6e 2e
+    63 6f 6d 82 0f 2a 2e 70 61 65 2e 62 61 69 64 75
+    2e 63 6f 6d 82 11 2a 2e 76 64 2e 62 64 73 74 61
+    74 69 63 2e 63 6f 6d 82 12 63 6c 69 63 6b 2e 68
+    6d 2e 62 61 69 64 75 2e 63 6f 6d 82 10 6c 6f 67
+    2e 68 6d 2e 62 61 69 64 75 2e 63 6f 6d 82 10 63
+    6d 2e 70 6f 73 2e 62 61 69 64 75 2e 63 6f 6d 82
+    10 77 6e 2e 70 6f 73 2e 62 61 69 64 75 2e 63 6f
+    6d 82 14 75 70 64 61 74 65 2e 70 61 6e 2e 62 61
+    69 64 75 2e 63 6f 6d 30 1d 06 03 55 1d 25 04 16
+    30 14 06 08 2b 06 01 05 05 07 03 01 06 08 2b 06
+    01 05 05 07 03 02 30 1f 06 03 55 1d 23 04 18 30
+    16 80 14 96 de 61 f1 bd 1c 16 29 53 1c c0 cc 7d
+    3b 83 00 40 e6 1a 7c 30 1d 06 03 55 1d 0e 04 16
+    04 14 9e c9 79 d7 e9 5b ab 8a 16 cc 32 8e c6 99
+    e6 9f 20 42 35 87 30 82 01 7e 06 0a 2b 06 01 04
+    01 d6 79 02 04 02 04 82 01 6e 04 82 01 6a 01 68
+    00 76 00 5c dc 43 92 fe e6 ab 45 44 b1 5e 9a d4
+    56 e6 10 37 fb d5 fa 47 dc a1 73 94 b2 5e e6 f6
+    c7 0e ca 00 00 01 71 39 b5 3c ba 00 00 04 03 00
+    47 30 45 02 20 69 86 68 31 21 b3 59 5d a3 d6 89
+    4a 97 45 66 0b 69 14 93 df c2 9e 72 87 a4 28 8a
+    1f e5 f5 e6 b2 02 21 00 c9 19 b4 5f 17 c8 a0 ae
+    fe 76 65 97 57 bd bc 89 4a 6d 6f 11 ad 4a ff ef
+    81 e9 99 27 15 45 1b 01 00 76 00 6f 53 76 ac 31
+    f0 31 19 d8 99 00 a4 51 15 ff 77 15 1c 11 d9 02
+    c1 00 29 06 8d b2 08 9a 37 d9 13 00 00 01 71 39
+    b5 3c e4 00 00 04 03 00 47 30 45 02 20 54 45 6c
+    30 4e 05 d9 fb d2 15 de 68 66 13 41 0e cd b8 3d
+    d3 50 cb 46 cc db 2c 8a 5a 7c 36 3f 5e 02 21 00
+    bb 2f 10 6a 9b 05 5a e9 1b 18 4a a1 35 65 cf bf
+    86 5a 89 bc 4a b7 d4 78 77 27 e3 ef 43 9f bc 46
+    00 76 00 f6 5c 94 2f d1 77 30 22 14 54 18 08 30
+    94 56 8e e3 4d 13 19 33 bf df 0c 2f 20 0b cc 4e
+    f1 64 e3 00 00 01 71 39 b5 3c ab 00 00 04 03 00
+    47 30 45 02 20 45 05 83 f1 28 47 61 95 fe 9b a9
+    bc 31 41 8e ed b2 48 1d a0 5b a5 3f 13 e6 76 bc
+    d2 e6 d3 69 3f 02 21 00 a9 ca ab 0c dc 87 df 25
+    20 d4 18 cc b0 15 e7 6f 82 f0 65 d9 3d 71 59 35
+    f8 5f a4 ce 2d 43 ac 5b 30 0d 06 09 2a 86 48 86
+    f7 0d 01 01 0b 05 00 03 82 01 01 00 bc dc 02 d0
+    d9 de 8c c5 e2 d9 fe 4d ef ba d1 22 8b 34 42 59
+    84 92 31 82 d5 0a bc 40 35 db 06 b2 13 6e c8 cf
+    01 f1 5f c0 e7 b7 34 37 3a a8 08 f2 9f 32 d5 f9
+    20 80 9f bf d3 ff 6d 47 9c 76 d1 cb f1 c7 f1 db
+    83 33 37 e5 3f 18 a7 00 e2 bd da fe 4f 29 45 57
+    87 78 5f 53 85 0d b3 a3 5c 63 93 fe e0 26 5e f9
+    92 8c ed 76 a3 5f 39 e6 22 05 36 c5 32 73 d0 cd
+    51 aa c8 c3 1f a8 ac 5b 26 b7 d9 94 60 08 81 81
+    d3 f5 b7 7a 4f df 39 21 58 33 b5 15 63 02 8c b8
+    22 ea d9 7a 74 ec 5a 41 bb 3d a7 c9 e2 40 21 ea
+    34 1a 4a ed 73 60 46 c7 96 3b 99 e4 f5 e5 92 13
+    ce f4 3c 16 d5 62 0f ba 0e 99 ae 5c a5 2d 34 d8
+    9a 55 b7 58 44 ce 01 38 bb d0 76 2c 64 de 8d 00
+    2b 99 e2 dd 61 10 ed c0 b0 5e e5 aa 37 40 d8 7c
+    13 37 5d 05 5f 61 ee 69 4b df e4 ec cf f8 f2 ae
+    a5 5f 55 2b 0f 31 f2 64 0a 53 ab eb 00 04 6d 30
+    82 04 69 30 82 03 51 a0 03 02 01 02 02 0b 04 00
+    00 00 00 01 44 4e f0 42 47 30 0d 06 09 2a 86 48
+    86 f7 0d 01 01 0b 05 00 30 57 31 0b 30 09 06 03
+    55 04 06 13 02 42 45 31 19 30 17 06 03 55 04 0a
+    13 10 47 6c 6f 62 61 6c 53 69 67 6e 20 6e 76 2d
+    73 61 31 10 30 0e 06 03 55 04 0b 13 07 52 6f 6f
+    74 20 43 41 31 1b 30 19 06 03 55 04 03 13 12 47
+    6c 6f 62 61 6c 53 69 67 6e 20 52 6f 6f 74 20 43
+    41 30 1e 17 0d 31 34 30 32 32 30 31 30 30 30 30
+    30 5a 17 0d 32 34 30 32 32 30 31 30 30 30 30 30
+    5a 30 66 31 0b 30 09 06 03 55 04 06 13 02 42 45
+    31 19 30 17 06 03 55 04 0a 13 10 47 6c 6f 62 61
+    6c 53 69 67 6e 20 6e 76 2d 73 61 31 3c 30 3a 06
+    03 55 04 03 13 33 47 6c 6f 62 61 6c 53 69 67 6e
+    20 4f 72 67 61 6e 69 7a 61 74 69 6f 6e 20 56 61
+    6c 69 64 61 74 69 6f 6e 20 43 41 20 2d 20 53 48
+    41 32 35 36 20 2d 20 47 32 30 82 01 22 30 0d 06
+    09 2a 86 48 86 f7 0d 01 01 01 05 00 03 82 01 0f
+    00 30 82 01 0a 02 82 01 01 00 c7 0e 6c 3f 23 93
+    7f cc 70 a5 9d 20 c3 0e 53 3f 7e c0 4e c2 98 49
+    ca 47 d5 23 ef 03 34 85 74 c8 a3 02 2e 46 5c 0b
+    7d c9 88 9d 4f 8b f0 f8 9c 6c 8c 55 35 db bf f2
+    b3 ea fb e3 56 e7 4a 46 d9 13 22 ca 36 d5 9b c1
+    a8 e3 96 43 93 f2 0c bc e6 f9 e6 e8 99 c8 63 48
+    78 7f 57 36 69 1a 19 1d 5a d1 d4 7d c2 9c d4 7f
+    e1 80 12 ae 7a ea 88 ea 57 d8 ca 0a 0a 3a 12 49
+    a2 62 19 7a 0d 24 f7 37 eb b4 73 92 7b 05 23 9b
+    12 b5 ce eb 29 df a4 14 02 b9 01 a5 d4 a6 9c 43
+    64 88 de f8 7e fe e3 f5 1e e5 fe dc a3 a8 e4 66
+    31 d9 4c 25 e9 18 b9 89 59 09 ae e9 9d 1c 6d 37
+    0f 4a 1e 35 20 28 e2 af d4 21 8b 01 c4 45 ad 6e
+    2b 63 ab 92 6b 61 0a 4d 20 ed 73 ba 7c ce fe 16
+    b5 db 9f 80 f0 d6 8b 6c d9 08 79 4a 4f 78 65 da
+    92 bc be 35 f9 b3 c4 f9 27 80 4e ff 96 52 e6 02
+    20 e1 07 73 e9 5d 2b bd b2 f1 02 03 01 00 01 a3
+    82 01 25 30 82 01 21 30 0e 06 03 55 1d 0f 01 01
+    ff 04 04 03 02 01 06 30 12 06 03 55 1d 13 01 01
+    ff 04 08 30 06 01 01 ff 02 01 00 30 1d 06 03 55
+    1d 0e 04 16 04 14 96 de 61 f1 bd 1c 16 29 53 1c
+    c0 cc 7d 3b 83 00 40 e6 1a 7c 30 47 06 03 55 1d
+    20 04 40 30 3e 30 3c 06 04 55 1d 20 00 30 34 30
+    32 06 08 2b 06 01 05 05 07 02 01 16 26 68 74 74
+    70 73 3a 2f 2f 77 77 77 2e 67 6c 6f 62 61 6c 73
+    69 67 6e 2e 63 6f 6d 2f 72 65 70 6f 73 69 74 6f
+    72 79 2f 30 33 06 03 55 1d 1f 04 2c 30 2a 30 28
+    a0 26 a0 24 86 22 68 74 74 70 3a 2f 2f 63 72 6c
+    2e 67 6c 6f 62 61 6c 73 69 67 6e 2e 6e 65 74 2f
+    72 6f 6f 74 2e 63 72 6c 30 3d 06 08 2b 06 01 05
+    05 07 01 01 04 31 30 2f 30 2d 06 08 2b 06 01 05
+    05 07 30 01 86 21 68 74 74 70 3a 2f 2f 6f 63 73
+    70 2e 67 6c 6f 62 61 6c 73 69 67 6e 2e 63 6f 6d
+    2f 72 6f 6f 74 72 31 30 1f 06 03 55 1d 23 04 18
+    30 16 80 14 60 7b 66 1a 45 0d 97 ca 89 50 2f 7d
+    04 cd 34 a8 ff fc fd 4b 30 0d 06 09 2a 86 48 86
+    f7 0d 01 01 0b 05 00 03 82 01 01 00 46 2a ee 5e
+    bd ae 01 60 37 31 11 86 71 74 b6 46 49 c8 10 16
+    fe 2f 62 23 17 ab 1f 87 f8 82 ed ca df 0e 2c df
+    64 75 8e e5 18 72 a7 8c 3a 8b c9 ac a5 77 50 f7
+    ef 9e a4 e0 a0 8f 14 57 a3 2a 5f ec 7e 6d 10 e6
+    ba 8d b0 08 87 76 0e 4c b2 d9 51 bb 11 02 f2 5c
+    dd 1c bd f3 55 96 0f d4 06 c0 fc e2 23 8a 24 70
+    d3 bb f0 79 1a a7 61 70 83 8a af 06 c5 20 d8 a1
+    63 d0 6c ae 4f 32 d7 ae 7c 18 45 75 05 29 77 df
+    42 40 64 64 86 be 2a 76 09 31 6f 1d 24 f4 99 d0
+    85 fe f2 21 08 f9 c6 f6 f1 d0 59 ed d6 56 3c 08
+    28 03 67 ba f0 f9 f1 90 16 47 ae 67 e6 bc 80 48
+    e9 42 76 34 97 55 69 24 0e 83 d6 a0 2d b4 f5 f3
+    79 8a 49 28 74 1a 41 a1 c2 d3 24 88 35 30 60 94
+    17 b4 e1 04 22 31 3d 3b 2f 17 06 b2 b8 9d 86 2b
+    5a 69 ef 83 f5 4b c4 aa b4 2a f8 7c a1 b1 85 94
+    8c f4 0c 87 0c f4 ac 40 f8 59 49 98
+depth=2 C = BE, O = GlobalSign nv-sa, OU = Root CA, CN = GlobalSign Root CA
+verify return:1
+depth=1 C = BE, O = GlobalSign nv-sa, CN = GlobalSign Organization Validation CA - SHA256 - G2
+verify return:1
+depth=0 C = CN, ST = beijing, L = beijing, OU = service operation department, O = "Beijing Baidu Netcom Science Technology Co., Ltd", CN = baidu.com
+verify return:1
+<<< ??? [length 0005]
+    16 03 03 01 4d
+<<< TLS 1.2, Handshake [length 014d], ServerKeyExchange
+    0c 00 01 49 03 00 17 41 04 84 84 4e 57 76 75 5a
+    ce 65 ab e0 36 7e b3 eb e6 a2 be 8a 2c 82 ed 1b
+    95 80 89 12 6f c5 66 7c e5 a3 d0 ed 91 49 17 d7
+    0f 65 fd 32 b4 6c 69 a6 e0 7e d7 d1 33 79 bc 58
+    18 6c ed 8d b2 c9 20 4b 86 04 01 01 00 6f 44 cf
+    17 aa 76 ed 41 fe c4 b3 17 06 13 99 24 4f 98 eb
+    d3 ca c6 fd 19 e5 78 12 f9 40 d7 05 99 a4 86 ef
+    fa ee 74 d4 c5 b6 be 4a ed 40 a8 74 4b 23 db 4b
+    5b 42 23 d0 35 b2 e5 a1 91 3f cd a9 af ca e9 e9
+    31 1c 9a 21 7b 4b 3b 14 dd 54 7a f7 70 2b 95 99
+    0c 32 c6 8d 3c c4 e1 db 78 51 a2 12 34 00 15 a3
+    4b 13 c4 4e a0 10 66 28 2f 9e 6f 89 1c 0e 85 32
+    20 26 8c 64 87 f6 ad 21 36 5a 9a 19 b3 d4 9b fd
+    cc 1e 48 3f 6b ea 37 5f 0d eb 93 fd 55 7e 10 33
+    38 63 14 2a a9 58 c8 84 e4 b1 b8 17 de 4d a8 4c
+    8e ae 84 00 ee 7c f4 2e 35 fd 51 36 e4 08 8b eb
+    39 25 a7 d3 0f b1 fa 2c 2e fa 46 ff a5 d5 a0 6a
+    43 b3 a7 86 8e 04 d3 12 d8 a7 5f 56 f3 bd ab 6e
+    19 a7 dc ee bd 79 2e 7e df c4 99 22 05 97 79 08
+    18 37 ff 8c 87 72 ca ae ef a4 60 1a 4b 84 94 ff
+    19 1b e5 4a af 36 3a 7a a5 24 2f b0 02
+<<< ??? [length 0005]
+    16 03 03 00 04
+<<< TLS 1.2, Handshake [length 0004], ServerHelloDone
+    0e 00 00 00
+>>> ??? [length 0005]
+    16 03 03 00 46
+>>> TLS 1.2, Handshake [length 0046], ClientKeyExchange
+    10 00 00 42 41 04 97 0a 25 51 d2 61 7e d9 24 83
+    8d 15 6b 25 10 33 e8 7f 75 be 2c 04 f5 23 d5 e1
+    15 8c ec 51 d6 b8 0a a4 09 c0 36 e5 f6 30 c7 18
+    69 a6 33 3c 08 db ed 11 cc fb 46 f1 24 8d b1 83
+    da bc b1 b8 94 6b
+>>> ??? [length 0005]
+    14 03 03 00 01
+>>> TLS 1.2, ChangeCipherSpec [length 0001]
+    01
+>>> ??? [length 0005]
+    16 03 03 00 28
+>>> TLS 1.2, Handshake [length 0010], Finished
+    14 00 00 0c 50 1f cc c9 4a 96 74 b2 42 6a a9 ee
+<<< ??? [length 0005]
+    16 03 03 00 72
+<<< TLS 1.2, Handshake [length 0072], NewSessionTicket
+    04 00 00 6e 00 00 00 00 00 68 67 08 00 77 58 b7
+    2c ed 9a 10 68 37 3a a5 3b 01 98 18 ad a6 4c ca
+    6a 4c 60 6d ee e9 88 25 86 3b d0 de 9c 6a d5 06
+    1f 24 88 f8 0c 2d 32 e7 48 ba 78 95 58 d7 dd a9
+    d8 50 8c b3 69 78 a2 04 09 70 8d be a1 df e2 cb
+    04 1e 99 8c 17 2a ca fa 7d a8 77 6a 40 09 e1 b3
+    02 d9 b5 f4 f1 f2 3f 71 88 85 d1 44 d6 66 b3 8e
+    3e b1
+<<< ??? [length 0005]
+    14 03 03 00 01
+<<< ??? [length 0005]
+    16 03 03 00 28
+<<< TLS 1.2, Handshake [length 0010], Finished
+    14 00 00 0c c7 86 c0 e1 7a 15 fa b4 5f d5 3d b6
+---
+Certificate chain
+ 0 s:C = CN, ST = beijing, L = beijing, OU = service operation department, O = "Beijing Baidu Netcom Science Technology Co., Ltd", CN = baidu.com
+   i:C = BE, O = GlobalSign nv-sa, CN = GlobalSign Organization Validation CA - SHA256 - G2
+ 1 s:C = BE, O = GlobalSign nv-sa, CN = GlobalSign Organization Validation CA - SHA256 - G2
+   i:C = BE, O = GlobalSign nv-sa, OU = Root CA, CN = GlobalSign Root CA
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIKLjCCCRagAwIBAgIMclh4Nm6fVugdQYhIMA0GCSqGSIb3DQEBCwUAMGYxCzAJ
+BgNVBAYTAkJFMRkwFwYDVQQKExBHbG9iYWxTaWduIG52LXNhMTwwOgYDVQQDEzNH
+bG9iYWxTaWduIE9yZ2FuaXphdGlvbiBWYWxpZGF0aW9uIENBIC0gU0hBMjU2IC0g
+RzIwHhcNMjAwNDAyMDcwNDU4WhcNMjEwNzI2MDUzMTAyWjCBpzELMAkGA1UEBhMC
+Q04xEDAOBgNVBAgTB2JlaWppbmcxEDAOBgNVBAcTB2JlaWppbmcxJTAjBgNVBAsT
+HHNlcnZpY2Ugb3BlcmF0aW9uIGRlcGFydG1lbnQxOTA3BgNVBAoTMEJlaWppbmcg
+QmFpZHUgTmV0Y29tIFNjaWVuY2UgVGVjaG5vbG9neSBDby4sIEx0ZDESMBAGA1UE
+AxMJYmFpZHUuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwamw
+rkca0lfrHRUfblyy5PgLINvqAN8p/6RriSZLnyMv7FewirhGQCp+vNxaRZdPrUEO
+vCCGSwxdVSFH4jE8V6fsmUfrRw1y18gWVHXv00URD0vOYHpGXCh0ro4bvthwZnuo
+k0ko0qN2lFXefCfyD/eYDK2G2sau/Z/w2YEympfjIe4EkpbkeBHlxBAOEDF6Speg
+68ebxNqJN6nDN9dWsX9Sx9kmCtavOBaxbftzebFoeQOQ64h7jEiRmFGlB5SGpXhG
+eY9Ym+k1Wafxe1cxCpDPJM4NJOeSsmrp5pY3Crh8hy900lzoSwpfZhinQYbPJqYI
+jqVJF5JTs5Glz1OwMQIDAQABo4IGmDCCBpQwDgYDVR0PAQH/BAQDAgWgMIGgBggr
+BgEFBQcBAQSBkzCBkDBNBggrBgEFBQcwAoZBaHR0cDovL3NlY3VyZS5nbG9iYWxz
+aWduLmNvbS9jYWNlcnQvZ3Nvcmdhbml6YXRpb252YWxzaGEyZzJyMS5jcnQwPwYI
+KwYBBQUHMAGGM2h0dHA6Ly9vY3NwMi5nbG9iYWxzaWduLmNvbS9nc29yZ2FuaXph
+dGlvbnZhbHNoYTJnMjBWBgNVHSAETzBNMEEGCSsGAQQBoDIBFDA0MDIGCCsGAQUF
+BwIBFiZodHRwczovL3d3dy5nbG9iYWxzaWduLmNvbS9yZXBvc2l0b3J5LzAIBgZn
+gQwBAgIwCQYDVR0TBAIwADBJBgNVHR8EQjBAMD6gPKA6hjhodHRwOi8vY3JsLmds
+b2JhbHNpZ24uY29tL2dzL2dzb3JnYW5pemF0aW9udmFsc2hhMmcyLmNybDCCA04G
+A1UdEQSCA0UwggNBggliYWlkdS5jb22CDGJhaWZ1YmFvLmNvbYIMd3d3LmJhaWR1
+LmNughB3d3cuYmFpZHUuY29tLmNugg9tY3QueS5udW9taS5jb22CC2Fwb2xsby5h
+dXRvggZkd3ouY26CCyouYmFpZHUuY29tgg4qLmJhaWZ1YmFvLmNvbYIRKi5iYWlk
+dXN0YXRpYy5jb22CDiouYmRzdGF0aWMuY29tggsqLmJkaW1nLmNvbYIMKi5oYW8x
+MjMuY29tggsqLm51b21pLmNvbYINKi5jaHVhbmtlLmNvbYINKi50cnVzdGdvLmNv
+bYIPKi5iY2UuYmFpZHUuY29tghAqLmV5dW4uYmFpZHUuY29tgg8qLm1hcC5iYWlk
+dS5jb22CDyoubWJkLmJhaWR1LmNvbYIRKi5mYW55aS5iYWlkdS5jb22CDiouYmFp
+ZHViY2UuY29tggwqLm1pcGNkbi5jb22CECoubmV3cy5iYWlkdS5jb22CDiouYmFp
+ZHVwY3MuY29tggwqLmFpcGFnZS5jb22CCyouYWlwYWdlLmNugg0qLmJjZWhvc3Qu
+Y29tghAqLnNhZmUuYmFpZHUuY29tgg4qLmltLmJhaWR1LmNvbYISKi5iYWlkdWNv
+bnRlbnQuY29tggsqLmRsbmVsLmNvbYILKi5kbG5lbC5vcmeCEiouZHVlcm9zLmJh
+aWR1LmNvbYIOKi5zdS5iYWlkdS5jb22CCCouOTEuY29tghIqLmhhbzEyMy5iYWlk
+dS5jb22CDSouYXBvbGxvLmF1dG+CEioueHVlc2h1LmJhaWR1LmNvbYIRKi5iai5i
+YWlkdWJjZS5jb22CESouZ3ouYmFpZHViY2UuY29tgg4qLnNtYXJ0YXBwcy5jboIN
+Ki5iZHRqcmN2LmNvbYIMKi5oYW8yMjIuY29tggwqLmhhb2thbi5jb22CDyoucGFl
+LmJhaWR1LmNvbYIRKi52ZC5iZHN0YXRpYy5jb22CEmNsaWNrLmhtLmJhaWR1LmNv
+bYIQbG9nLmhtLmJhaWR1LmNvbYIQY20ucG9zLmJhaWR1LmNvbYIQd24ucG9zLmJh
+aWR1LmNvbYIUdXBkYXRlLnBhbi5iYWlkdS5jb20wHQYDVR0lBBYwFAYIKwYBBQUH
+AwEGCCsGAQUFBwMCMB8GA1UdIwQYMBaAFJbeYfG9HBYpUxzAzH07gwBA5hp8MB0G
+A1UdDgQWBBSeyXnX6VurihbMMo7GmeafIEI1hzCCAX4GCisGAQQB1nkCBAIEggFu
+BIIBagFoAHYAXNxDkv7mq0VEsV6a1FbmEDf71fpH3KFzlLJe5vbHDsoAAAFxObU8
+ugAABAMARzBFAiBphmgxIbNZXaPWiUqXRWYLaRST38KecoekKIof5fXmsgIhAMkZ
+tF8XyKCu/nZll1e9vIlKbW8RrUr/74HpmScVRRsBAHYAb1N2rDHwMRnYmQCkURX/
+dxUcEdkCwQApBo2yCJo32RMAAAFxObU85AAABAMARzBFAiBURWwwTgXZ+9IV3mhm
+E0EOzbg901DLRszbLIpafDY/XgIhALsvEGqbBVrpGxhKoTVlz7+GWom8SrfUeHcn
+4+9Dn7xGAHYA9lyUL9F3MCIUVBgIMJRWjuNNExkzv98MLyALzE7xZOMAAAFxObU8
+qwAABAMARzBFAiBFBYPxKEdhlf6bqbwxQY7tskgdoFulPxPmdrzS5tNpPwIhAKnK
+qwzch98lINQYzLAV52+C8GXZPXFZNfhfpM4tQ6xbMA0GCSqGSIb3DQEBCwUAA4IB
+AQC83ALQ2d6MxeLZ/k3vutEiizRCWYSSMYLVCrxANdsGshNuyM8B8V/A57c0Nzqo
+CPKfMtX5IICfv9P/bUecdtHL8cfx24MzN+U/GKcA4r3a/k8pRVeHeF9ThQ2zo1xj
+k/7gJl75koztdqNfOeYiBTbFMnPQzVGqyMMfqKxbJrfZlGAIgYHT9bd6T985IVgz
+tRVjAoy4IurZenTsWkG7PafJ4kAh6jQaSu1zYEbHljuZ5PXlkhPO9DwW1WIPug6Z
+rlylLTTYmlW3WETOATi70HYsZN6NACuZ4t1hEO3AsF7lqjdA2HwTN10FX2HuaUvf
+5OzP+PKupV9VKw8x8mQKU6vr
+-----END CERTIFICATE-----
+subject=C = CN, ST = beijing, L = beijing, OU = service operation department, O = "Beijing Baidu Netcom Science Technology Co., Ltd", CN = baidu.com
+
+issuer=C = BE, O = GlobalSign nv-sa, CN = GlobalSign Organization Validation CA - SHA256 - G2
+
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA
+Server Temp Key: ECDH, P-256, 256 bits
+---
+SSL handshake has read 4336 bytes and written 441 bytes
+Verification: OK
+---
+New, TLSv1.2, Cipher is ECDHE-RSA-AES128-GCM-SHA256
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES128-GCM-SHA256
+    Session-ID: F92D1BBC409A6690C0DD22267849922BD61D08CF97B8CBCBE02937BF115C77DB
+    Session-ID-ctx: 
+    Master-Key: 0047B1BFB9FE9DCEE919C20738C241F29500382DAB53BD96CCD173D302AD83A6A21CE700E01586D6001051DF193C8669
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket:
+    0000 - 67 08 00 77 58 b7 2c ed-9a 10 68 37 3a a5 3b 01   g..wX.,...h7:.;.
+    0010 - 98 18 ad a6 4c ca 6a 4c-60 6d ee e9 88 25 86 3b   ....L.jL`m...%.;
+    0020 - d0 de 9c 6a d5 06 1f 24-88 f8 0c 2d 32 e7 48 ba   ...j...$...-2.H.
+    0030 - 78 95 58 d7 dd a9 d8 50-8c b3 69 78 a2 04 09 70   x.X....P..ix...p
+    0040 - 8d be a1 df e2 cb 04 1e-99 8c 17 2a ca fa 7d a8   ...........*..}.
+    0050 - 77 6a 40 09 e1 b3 02 d9-b5 f4 f1 f2 3f 71 88 85   wj@.........?q..
+    0060 - d1 44 d6 66 b3 8e 3e b1-                          .D.f..>.
+
+    Start Time: 1617602969
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+---
+<<< ??? [length 0005]
+    15 03 03 00 1a
+<<< TLS 1.2, Alert [length 0002], warning close_notify
+    01 00
+closed
+>>> ??? [length 0005]
+    15 03 03 00 1a
+>>> TLS 1.2, Alert [length 0002], warning close_notify
+    01 00
